@@ -13,39 +13,10 @@ grunt.initConfig({
 	sass: {
 		dist: {
 			files: {
-				// 'css/foundation.css': 'scss/vendor/styles.scss',
 				'css/styles.css': 'scss/styles.scss',
 			},
 		}
 	},
-
-	// //Minify css in /css folder
-	// cssmin: {
-	// 	target: {
-	// 		files: [{
-	// 			expand: true,
-	// 			cwd: 'css',
-	// 			src: ['*.css', '!*.min.css'],
-	// 			dest: 'css',
-	// 			ext: '.min.css'
-	// 		}],
-	// 		tasks: ['notify:optimise'],
-	// 	}
-	// },
-
-	// //Minify js in /js folder
-	// uglify: {
-	// 	my_target: {
-	// 		files: [{
-	// 			expand: true,
-	// 			cwd: 'js/vendor',
-	// 			src: ['*.js', '!*.min.js'],
-	// 			dest: 'js/vendor',
-	// 			ext: '.min.js'
-	// 		}],
-	// 		tasks: ['notify:optimise'],
-	// 	}
-	// },
 
 	//watch for changes to SCSS files.
 	watch: {
@@ -65,18 +36,6 @@ grunt.initConfig({
 				livereload: 35729
 			}
 		}
-	},
-
-	connect: {
-		dev: {
-			options: {
-				port: 8888,
-				hostname: 'localhost',
-				livereload: 35729,
-				open: true,
-				cwd: '/theoandnicolawedding',
-			},
-		},
 	},
 
 	//configurations for OS X notifications, for each task.
@@ -111,8 +70,6 @@ grunt.initConfig({
 });
 
 	grunt.registerTask('cleanit', ['clean','notify:clean']);
-	grunt.registerTask('develop', ['sass','notify:sass','connect:dev','watch','notify:watch']);
-	grunt.registerTask('optimise', ['clean','notify:clean','cssmin','uglify','notify:optimise']);
-	grunt.registerTask('serve', ['connect:dev']);
+	grunt.registerTask('develop', ['sass','notify:sass','watch','notify:watch']);
 	grunt.registerTask('watchit', ['watch']);
 };
