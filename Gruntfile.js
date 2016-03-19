@@ -38,6 +38,19 @@ grunt.initConfig({
 		}
 	},
 
+	connect: {
+		dev: {
+			options: {
+				port: 8888,
+				cwd: 'scrabble-tiles',
+				livereload: 35729,
+				open: {
+					target: 'http://localhost:8888/scrabble.html'
+				}
+			}
+		},
+	},
+
 	//configurations for OS X notifications, for each task.
 	notify: {
 		clean: {
@@ -70,6 +83,6 @@ grunt.initConfig({
 });
 
 	grunt.registerTask('cleanit', ['clean','notify:clean']);
-	grunt.registerTask('develop', ['sass','notify:sass','watch','notify:watch']);
+	grunt.registerTask('develop', ['sass','notify:sass','connect:dev','watch','notify:watch']);
 	grunt.registerTask('watchit', ['watch']);
 };
