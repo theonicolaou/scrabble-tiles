@@ -1,11 +1,11 @@
-.cs-text {
+.scrabble-container {
 	clear: both;
 
 	@media screen and (min-width: $desktop) {
 		margin-left: 15px;
 	}
 
-	.space {
+	.scrabble-tile__space {
 		width: 90px;
 		height: 100px;
 		display: inline-block;
@@ -27,7 +27,7 @@
 		inset -2px -3px 0px rgba(143,128,82,0.6);
 	}
 
-	.letter {
+	.scrabble-tile__letter {
 		background: #d5b292 url("../images/scrabble-tile-dark-bg.jpg") no-repeat scroll 0 0;
     border-radius: 4px;
     box-shadow: 3px 3px 4px #c8c8c8, 3px 0 2px rgba(213, 178, 146, 0.4) inset, 0 3px 0 rgba(213, 178, 146, 0.5) inset, -3px -4px 0 rgba(107, 107, 107, 0.6) inset;
@@ -71,7 +71,7 @@
 	}
 }
 
-.number {
+.scrabble-tile__number {
 	font-size: 13px;
 	position: relative;
 	right: 0;
@@ -87,23 +87,19 @@
 	}
 }
 
-.nw {
-  transform: rotate(3deg);
+.scrabble-tile__rotate-nw {
+  transform: rotate($scrabble-tile__rotate-nw);
 }
 
-.ne {
-  transform: rotate(-2deg);
+.scrabble-tile__rotate-ne {
+  transform: rotate($scrabble-tile__rotate-ne);
 }
 
-.end-letter {
-	// margin-right: 0 !important;
-
-	// @media screen and (min-width: 480px) {
-		margin-right: 20px !important;
-	// }
+.scrabble-tile--end-letter {
+	margin-right: 20px !important;
 }
 
-.end-letter__mobile-only {
+.scrabble-tile--end-letter__mobile-only {
 	margin-right: 20px !important;
 
 	@media screen and (min-width: $tablet) {
@@ -111,7 +107,7 @@
 	}
 }
 
-.new-word {
+.scrabble-tile__new-word {
 	clear: both;
 
 	@media screen and (min-width: 480px) {
