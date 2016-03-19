@@ -1,6 +1,6 @@
 {
-  "name": "theo-nicolaou.co.uk",
-  "version": "0.1.0",
+  "name": "Responsive Scrabble tiles",
+  "version": "1.0",
   "description": "A library of responsive scrabble tiles.",
   "main": "index.js",
   "scripts": {
