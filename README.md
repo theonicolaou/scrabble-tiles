@@ -39,6 +39,10 @@ You can rotate the tile using one of these classes:
 ```scrabble-tile__rotate-nw``` or ```scrabble-tile__rotate-ne```. The amount of rotation can be set in the _variables.scss Sass partial.
 
 There are also some other utility classes available:
-```scrabble-tile--end-letter``` applies margin-right to the tile. ```scrabble-tile--end-letter__mobile-only``` applies to 768px and up.
-```scrabble-tile__new-word``` applies a ```clear: both``` to the tile so that the next tile starts on a new line
+```scrabble-tile--end-letter``` applies margin-right to the tile.
+
+```scrabble-tile--end-letter__mobile-only``` applies to 768px and up.
+
+```scrabble-tile__new-word``` applies a ```clear: both``` to the tile so that the next tile starts on a new line.
+
 ```display--inline-block``` displays the word in the center of the screen (useful for short words that look odd when aligned left)
