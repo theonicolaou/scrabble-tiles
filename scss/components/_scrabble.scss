@@ -9,8 +9,8 @@
 		width: 90px;
 		height: 100px;
 		display: inline-block;
-		background: #d5b292;
-		color: #2a1f1b;
+		background: $scrabble-tile__bg-color;
+		color: $scrabble-tile__font-color;
 		border-radius: 4px;
 		font-size: 60px;
 		font-weight: 400;
@@ -28,14 +28,14 @@
 	}
 
 	.scrabble-tile__letter {
-		background: #d5b292 url("../images/scrabble-tile-dark-bg.jpg") no-repeat scroll 0 0;
+		background: $scrabble-tile__bg-color url($scrabble-tile__bg-image-path) no-repeat scroll 0 0;
     border-radius: 4px;
     box-shadow: 3px 3px 4px #c8c8c8, 3px 0 2px rgba(213, 178, 146, 0.4) inset, 0 3px 0 rgba(213, 178, 146, 0.5) inset, -3px -4px 0 rgba(107, 107, 107, 0.6) inset;
-    color: #2a1f1b;
+    color: $scrabble-tile__font-color;
     cursor: default;
     display: block;
     float: left;
-    font-family: "Spinnaker",Arial,sans-serif;
+    font-family: $scrabble-tile__font-family;
     font-size: 22px;
     font-weight: 400;
     height: 35px;
@@ -46,14 +46,14 @@
     text-transform: uppercase;
     width: 35px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $wide-phone__portrait) {
     	width: 31px;
     	height: 31px;
     	line-height: 25px;
     	font-size: 18px;
     }
 
-		@media screen and (min-width: 640px) {
+		@media screen and (min-width: $wide-phone__landscape) {
 			width: 40px;
 			height: 47px;
 			display: inline-block;
@@ -77,7 +77,7 @@
 	right: 0;
 	top: 5px;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: $wide-phone__portrait) {
 		font-size: 11px;
 	}
 
@@ -110,7 +110,7 @@
 .scrabble-tile__new-word {
 	clear: both;
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: $wide-phone__portrait) {
 		clear: none;
 	}
 }
