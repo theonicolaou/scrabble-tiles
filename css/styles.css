@@ -11,8 +11,8 @@
     width: 90px;
     height: 100px;
     display: inline-block;
-    background: #d5b292;
-    color: #2a1f1b;
+    background: #D5B292;
+    color: #2A1F1B;
     border-radius: 4px;
     font-size: 60px;
     font-weight: 400;
@@ -24,14 +24,14 @@
     text-transform: uppercase;
     box-shadow: 3px 3px 4px rgba(107, 107, 107, 0.8), inset 3px 0 2px rgba(255, 255, 255, 0.4), inset 0 3px 0px rgba(255, 255, 255, 0.5), inset -2px -3px 0px rgba(143, 128, 82, 0.6); }
   .scrabble-container .scrabble-tile__letter {
-    background: #d5b292 url("../images/scrabble-tile-dark-bg.jpg") no-repeat scroll 0 0;
+    background: #D5B292 url("../images/scrabble-tile-dark-bg.jpg") no-repeat scroll 0 0;
     border-radius: 4px;
     box-shadow: 3px 3px 4px #c8c8c8, 3px 0 2px rgba(213, 178, 146, 0.4) inset, 0 3px 0 rgba(213, 178, 146, 0.5) inset, -3px -4px 0 rgba(107, 107, 107, 0.6) inset;
-    color: #2a1f1b;
+    color: #2A1F1B;
     cursor: default;
     display: block;
     float: left;
-    font-family: "Spinnaker",Arial,sans-serif;
+    font-family: "Spinnaker", Arial, sans-serif;
     font-size: 22px;
     font-weight: 400;
     height: 35px;
@@ -95,5 +95,3 @@
   @media screen and (min-width: 480px) {
     .scrabble-tile__new-word {
       clear: none; } }
-
-/*# sourceMappingURL=styles.css.map */
