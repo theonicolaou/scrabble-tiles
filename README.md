@@ -3,7 +3,7 @@ This is a Sass-based library of responsive Scrabble tiles that can be used as a 
 
 To use the library you will need the following:
 
-* Ruby - https://www.ruby-lang.org/en/
+* Ruby - https://www.ruby-lang.org/en/ - not any more!
 * Sass - http://sass-lang.com/
 * NodeJS - https://docs.npmjs.com/getting-started/installing-node
 * A build tool of your choice (Grunt is included with this library to get you started - http://gruntjs.com/getting-started)
