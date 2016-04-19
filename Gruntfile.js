@@ -21,7 +21,7 @@ grunt.initConfig({
 	//watch for changes to SCSS files.
 	watch: {
 		sass: {
-			files: ['scss/**/*.scss'],
+			files: ['src/scss/**/*.scss'],
 			tasks: ['sass', 'notify:sass'],
 			
 			options: {
