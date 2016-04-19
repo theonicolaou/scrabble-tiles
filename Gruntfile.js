@@ -13,7 +13,7 @@ grunt.initConfig({
 	sass: {
 		dist: {
 			files: {
-				'css/styles.css': 'scss/styles.scss',
+				'dist/css/scrabble.css': 'src/scss/styles.scss',
 			},
 		}
 	},
@@ -29,27 +29,27 @@ grunt.initConfig({
 			}
 		},
 
-		html: {
-			files: ['*.html'],
-			tasks: ['notify:html'],
-			options: {
-				livereload: 35729
-			}
-		}
+		// html: {
+		// 	files: ['*.html'],
+		// 	tasks: ['notify:html'],
+		// 	options: {
+		// 		livereload: 35729
+		// 	}
+		// }
 	},
 
-	connect: {
-		dev: {
-			options: {
-				port: 8888,
-				cwd: 'scrabble-tiles',
-				livereload: 35729,
-				open: {
-					target: 'http://localhost:8888/scrabble.html'
-				}
-			}
-		},
-	},
+	// connect: {
+	// 	dev: {
+	// 		options: {
+	// 			port: 8888,
+	// 			cwd: 'scrabble-tiles',
+	// 			livereload: 35729,
+	// 			open: {
+	// 				target: 'http://localhost:8888/scrabble.html'
+	// 			}
+	// 		}
+	// 	},
+	// },
 
 	//configurations for OS X notifications, for each task.
 	notify: {
@@ -83,6 +83,6 @@ grunt.initConfig({
 });
 
 	grunt.registerTask('cleanit', ['clean','notify:clean']);
-	grunt.registerTask('develop', ['sass','notify:sass','connect:dev','watch','notify:watch']);
+	grunt.registerTask('develop', ['sass','notify:sass','watch','notify:watch']);
 	grunt.registerTask('watchit', ['watch']);
 };
