@@ -53,7 +53,7 @@
 					</ul>
 
 					<ol>
-						<li>Install Ruby, Sass, NPM and the Grunt CLI on your machine.</li>
+						<!-- <li>Install Ruby, Sass, NPM and the Grunt CLI on your machine.</li> -->
 						<li>Clone this repo: <a href="https://github.com/theonicolaou/scrabble-tiles">https://github.com/theonicolaou/scrabble-tiles</a>
 						</li>
 						<li>
@@ -94,12 +94,17 @@
 
 							<p><code>scrabble-tile__rotate-nw</code> or <code>scrabble-tile__rotate-ne</code>. The amount of rotation can be set in the _variables.scss Sass partial.</p>
 
+							<div class="scrabble-container">
+								<span class="scrabble-tile__letter scrabble-tile__rotate-ne">A<span class="scrabble-tile__number">1</span></span>
+								<span class="scrabble-tile__letter scrabble-tile__rotate-nw">B<span class="scrabble-tile__number">3</span></span>
+							</div>
+
 							<p>There are also some other utility classes available:
 								<code>scrabble-tile--end-letter</code> applies margin-right to the tile.</p>
 
 								<p><code>scrabble-tile--end-letter__mobile-only</code> applies to 768px and up.</p>
 
-								<p><code>scrabble-tile__new-word</code> applies a <code>clear: both</code> to the tile so that the next tile starts on a new line.</p>
+								<p><code>scrabble-tile__new-word</code> applies a <code>clear: both</code> to the tile so that the next tile starts on a new line on smaller screens.</p>
 
 								<p><code>display--inline-block</code> displays the word in the center of the screen (useful for short words that look odd when aligned left)</p>
 							</section>
