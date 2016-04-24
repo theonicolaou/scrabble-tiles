@@ -1,0 +1,24 @@
+{
+  "name": "scrabble-tiles",
+  "version": "0.0.4",
+  "main": "dist/css/scrabble.css",
+  "ignore": [
+    "src",
+    ".gitignore",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "homepage": "https://github.com/theonicolaou/scrabble-tiles",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "427d11c6c225cb98894fa74054757f9020748611"
+  },
+  "_source": "https://github.com/theonicolaou/scrabble-tiles.git",
+  "_target": "~0.0.4",
+  "_originalSource": "scrabble-tiles",
+  "_direct": true
+}
