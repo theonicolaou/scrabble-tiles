@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="demo/css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="demo/stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="demo/stylesheets/github-dark.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="demo/stylesheets/print.css" media="print">
+	<link rel="stylesheet" type="text/css" href="demo/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/scrabble-tiles/dist/css/scrabble.css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,110 +18,136 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
+  	<div id="container">
+  		<div class="inner">
 
-        <header>
-          <h1>Scrabble-tiles</h1>
-          <h2>A library of responsive scrabble tiles.</h2>
-        </header>
+  			<header>
+  				<h1>Scrabble-tiles</h1>
+  				<h2>A library of responsive scrabble tiles.</h2>
+  			</header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/theonicolaou/scrabble-tiles/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/theonicolaou/scrabble-tiles/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/theonicolaou/scrabble-tiles" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+  			<section id="downloads" class="clearfix">
+  				<div class="row">
+  					<div class="small-12 medium-6 large-6 columns">
+  						<a href="https://github.com/theonicolaou/scrabble-tiles/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+  					</div>
+  					<div class="small-12 medium-6 large-6 columns">
+  						<a href="https://github.com/theonicolaou/scrabble-tiles" id="view-on-github" class="button"><span>View on GitHub</span></a>
+  					</div>
+  				</div>
+  			</section>
 
-        <hr>
+  			<hr>
 
-        			<section id="main-content">
-				<!-- <h1>
-					<a id="scrabble-tiles" class="anchor" href="#scrabble-tiles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>scrabble-tiles</h1> -->
-					<div class="scrabble-container">
-						<span class="scrabble-tile__letter scrabble-tile__rotate-nw">S<span class="scrabble-tile__number">1</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-ne">C<span class="scrabble-tile__number">3</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-nw">R<span class="scrabble-tile__number">1</span></span>
-						<span class="scrabble-tile__letter">A<span class="scrabble-tile__number">1</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-ne">B<span class="scrabble-tile__number">3</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-nw">B<span class="scrabble-tile__number">3</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-ne">L<span class="scrabble-tile__number">1</span></span>
-						<span class="scrabble-tile__letter scrabble-tile__rotate-nw">E<span class="scrabble-tile__number">1</span></span>
-					</div>
+  			<section id="main-content">
+  				<div class="row">
+  					<div class="small-12 medium-12 large-12 columns">
+  						<div class="scrabble-container">
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-nw">S<span class="scrabble-tile__number">1</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-ne">C<span class="scrabble-tile__number">3</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-nw">R<span class="scrabble-tile__number">1</span></span>
+  							<span class="scrabble-tile__letter">A<span class="scrabble-tile__number">1</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-ne">B<span class="scrabble-tile__number">3</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-nw">B<span class="scrabble-tile__number">3</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-ne">L<span class="scrabble-tile__number">1</span></span>
+  							<span class="scrabble-tile__letter scrabble-tile__rotate-nw">E<span class="scrabble-tile__number">1</span></span>
+  						</div>
+  					</div>
+  				</div>
 
-					<p>This is a Sass-based library of responsive Scrabble tiles that can be used as a font on your web site/web app.</p>
+  				<div class="row">
+  					<div class="small-12 medium-12 large-12 columns">
+  						<p>This is a Sass-based library of responsive Scrabble tiles that can be used as a font on your web site/web app.</p>
+  						<p>To use the library you will need the following:</p>
+  					</div>
+  				</div>
 
-					<p>To use the library you will need the following:</p>
+  				<div class="row">
+  					<div class="small-12 medium-12 large-12 columns">
+  						<ul>
+  							<li>NodeJS - <a href="https://docs.npmjs.com/getting-started/installing-node">https://docs.npmjs.com/getting-started/installing-node</a>
+  							</li>
+  							<li><p>A build tool of your choice (Grunt is included with this library to get you started - <a href="http://gruntjs.com/getting-started">http://gruntjs.com/getting-started</a>)</p></li>
+  						</ul>
 
-					<ul>
-						<li>NodeJS - <a href="https://docs.npmjs.com/getting-started/installing-node">https://docs.npmjs.com/getting-started/installing-node</a>
-						</li>
-						<li><p>A build tool of your choice (Grunt is included with this library to get you started - <a href="http://gruntjs.com/getting-started">http://gruntjs.com/getting-started</a>)</p></li>
-					</ul>
+  						<ol>
+  							<li>Clone this repo: <a href="https://github.com/theonicolaou/scrabble-tiles">https://github.com/theonicolaou/scrabble-tiles</a>
+  							</li>
+  							<li>
+  								<p>Navigate to the root of the folder you have cloned into and check you have Grunt installed:</p>
 
-					<ol>
-						<!-- <li>Install Ruby, Sass, NPM and the Grunt CLI on your machine.</li> -->
-						<li>Clone this repo: <a href="https://github.com/theonicolaou/scrabble-tiles">https://github.com/theonicolaou/scrabble-tiles</a>
-						</li>
-						<li>
-							<p>Navigate to the root of the folder you have cloned into and check you have Grunt installed:</p>
+  								<p><code>grunt -v</code></p>
+  							</li>
+  							<li>
+  								<p>Then, type:</p>
 
-							<p><code>grunt -v</code></p>
-						</li>
-						<li>
-							<p>Then, type:</p>
+  								<p><code>npm install</code> (this will install all the required Grunt modules)</p>
+  							</li>
+  							<li>
+  								<p>Then, type:</p>
 
-							<p><code>npm install</code> (this will install all the required Grunt modules)</p>
-						</li>
-						<li>
-							<p>Then, type:</p>
+  								<p><code>grunt develop</code> and this should start up a local server at port 8888 with a demo page of the Scrabble tiles.</p>
+  							</li>
+  						</ol>
+  					</div>
+  				</div>
 
-							<p><code>grunt develop</code> and this should start up a local server at port 8888 with a demo page of the Scrabble tiles.</p>
-						</li>
-					</ol>
+  				<div class="row">
+  					<div class="small-12 medium-12 large-12 columns">
+  						<h1>
+  							<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use
+  						</h1>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="small-12 medium-12 large-12 columns">
+  						<p>Make sure your HTML page has a reference to the CSS file:</p>
+  						<p><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></p>
+  						<p>Use the following markup for a standard tile:</p>
+  						<p><code>&lt;div class="scrabble-container"&gt;<br />
+  							&lt;span class="scrabble-tile__letter"&gt;A&lt;span class="scrabble-tile__number"&gt;1&lt;/span&gt;&lt;/span&gt;
+  							<br />&lt;/div&gt;</code></p>
+  							which should look like this:
+  							<div class="scrabble-container">
+  								<span class="scrabble-tile__letter">A<span class="scrabble-tile__number">1</span></span>
+  							</div>							
+  						</div>
+  					</div>
 
-					<h1>
-						<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h1>
+  					<div class="row">
+  						<div class="small-12 medium-12 large-12 columns">
+  							<p>You can rotate the tile using one of these classes:</p>
 
-						<p>Make sure your HTML page has a reference to the CSS file:</p>
+  							<p><code>scrabble-tile__rotate-nw</code> or <code>scrabble-tile__rotate-ne</code>. The amount of rotation can be set in the _variables.scss Sass partial.</p>
 
-						<p><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></p>
+  							<div class="scrabble-container">
+  								<span class="scrabble-tile__letter scrabble-tile__rotate-ne">A<span class="scrabble-tile__number">1</span></span>
+  								<span class="scrabble-tile__letter scrabble-tile__rotate-nw">B<span class="scrabble-tile__number">3</span></span>
+  							</div>
+  						</div>
+  					</div>
 
-						<p>Use the following markup for a standard tile:</p>
+  					<div class="row">
+  						<div class="small-12 medium-12 large-12 columns">
+  							<p>There are also some other utility classes available:
+  								<code>scrabble-tile--end-letter</code> applies margin-right to the tile.</p>
 
-						<p><code>&lt;div class="scrabble-container"&gt;<br />
-							&lt;span class="scrabble-tile__letter"&gt;A&lt;span class="scrabble-tile__number"&gt;1&lt;/span&gt;&lt;/span&gt;
-							<br />&lt;/div&gt;</code></p>
-							which should look like this:
-							<div class="scrabble-container">
-								<span class="scrabble-tile__letter">A<span class="scrabble-tile__number">1</span></span>
-							</div>
+  								<p><code>scrabble-tile--end-letter__mobile-only</code> applies to 768px and up.</p>
 
-							<p>You can rotate the tile using one of these classes:</p>
+  								<p><code>scrabble-tile__new-word</code> applies a <code>clear: both</code> to the tile so that the next tile starts on a new line on smaller screens.</p>
 
-							<p><code>scrabble-tile__rotate-nw</code> or <code>scrabble-tile__rotate-ne</code>. The amount of rotation can be set in the _variables.scss Sass partial.</p>
+  								<p><code>display--inline-block</code> displays the word in the center of the screen (useful for short words that look odd when aligned left)</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
 
-							<div class="scrabble-container">
-								<span class="scrabble-tile__letter scrabble-tile__rotate-ne">A<span class="scrabble-tile__number">1</span></span>
-								<span class="scrabble-tile__letter scrabble-tile__rotate-nw">B<span class="scrabble-tile__number">3</span></span>
-							</div>
-
-							<p>There are also some other utility classes available:
-								<code>scrabble-tile--end-letter</code> applies margin-right to the tile.</p>
-
-								<p><code>scrabble-tile--end-letter__mobile-only</code> applies to 768px and up.</p>
-
-								<p><code>scrabble-tile__new-word</code> applies a <code>clear: both</code> to the tile so that the next tile starts on a new line on smaller screens.</p>
-
-								<p><code>display--inline-block</code> displays the word in the center of the screen (useful for short words that look odd when aligned left)</p>
-							</section>
-
-        <footer>
-          Scrabble-tiles is maintained by <a href="https://github.com/theonicolaou">theonicolaou</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
-    </div>
+  			<footer>
+  				Scrabble-tiles is maintained by <a href="https://github.com/theonicolaou">theonicolaou</a><br>
+  				This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+  			</footer>
+  		</div>
+  	</div>
   </body>
-</html>
+  </html>
